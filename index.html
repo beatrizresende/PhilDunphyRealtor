@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóvel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/index.js"></script>
+    <script src="scripts/html2canvas.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="assets/logo.jpg" alt="logo" height="45px;" style="margin-left: 20px;">
+
+        <div class="menu">
+            <ul class="desktop">
+                <li>Condomínios</li>
+                <li>Fórum</li>
+                <li>Artigos</li>
+                <li class="margin-li">Ferramentas</li>
+
+                <li>Cotar imóvel</li>
+                <li>Planos</li>
+                <li>Entrar</li>
+            </ul>
+
+            <a id="buttonAbrirMobile" class="menu-icon" style="cursor: pointer">|||</a>
+            <ul class="mobile">
+                <li>Condomínios</li>
+                <li>Fórum</li>
+                <li>Artigos</li>
+                <li>Ferramentas</li>
+                <li>Cotar imóvel</li>
+                <li>Planos</li>
+                <li>Entrar</li>
+                <li>Termos</li>
+                <li>Contato</li>
+                <li>Sobre</li>
+                <li>CADASTRE-SE</li>
+            </ul>
+        </div>
+
+        <button class="cadastro">CADASTRE-SE</button>
+    </div>
+
+    <div class="container-total">
+        <div class="container">
+            <h6>1</h6>
+            <div id="one" class="data">
+                <div class="corretor" style="margin-bottom: 10px;">
+                    <div class="img-corretor-container">
+                        <img class="fundo" src="assets/phil.jpg" alt="fundo-corretora">
+                        <img class="img-corretor" src="assets/phil.jpg" alt="corretora">
+                    </div>
+
+                    <div class="info-corretor">
+                        <h3>Phil Dunphy</h3>
+                        <p>3.000 pontos</p>
+                        <p id="verTelefone1">Ver telefone</p>
+                    </div>
+                </div>
+
+                <div class="corretor">
+                    <div class="img-corretor-container">
+                        <img class="fundo" src="assets/andy.jpg" alt="fundo-corretor">
+                        <img class="img-corretor" src="assets/andy.jpg" alt="corretor">
+                    </div>
+
+                    <div class="info-corretor">
+                        <h3>Andy Bailey</h3>
+                        <p>1.260 pontos</p>
+                        <p id="verTelefone2">Ver telefone</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h6>2</h6>
+            <div id="two" class="data">
+                <h2>Mande uma mensagem:</h2>
+                <form>
+                    <input type="text" placeholder="Digite seu CPF" maxlength="14" id="cpf">
+                    <input id="telefoneForm" type="text" placeholder="Digite seu número" maxlength="15">
+                    <textarea rows="4" placeholder="Digite o assunto"></textarea>
+
+                    <button type="submit" class="button-padrao" id="enviarMensagem">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <h6>3</h6>
+            <div id="three" class="data">
+                <h2>Regra de 3</h2>
+                <form>
+                    <div class="top-form">
+                        <input id="primeiraVariavel" type="number">
+                        <hr />
+                        <input id="segundaVariavel" type="number">
+                    </div>
+                    <div class="bottom-form">
+                        <input id="terceiraVariavel" type="number">
+                        <hr />
+                        <input id="resultado" type="number" disabled>
+                    </div>
+                </form>
+                <button class="button-padrao" onclick="calcularRegraDeTres()" type="button"
+                    id="calcular">Calcular</button>
+            </div>
+        </div>
+        <div class="container">
+            <h6>4</h6>
+            <div id="four" class="data data-img">
+                <img class="casa" src="assets/house.jpg" alt="casa">
+            </div>
+            <button onclick="abrirModal()" id="botaoModal" class="button-padrao button-under-data" type="button">ABRIR
+                IMAGEM NO
+                MODAL</button>
+        </div>
+        <div class="container">
+            <h6>5</h6>
+            <div id="five" class="data data-img">
+                <a class="download" href="" download="casa-Phil-Dunphy-Realtor">
+                    <p>Phil Dunphy Realtor</p>
+                    <img class="casa" src="assets/house.jpg" alt="casa">
+                </a>
+            </div>
+            <button onclick="download()" id="downloadImagem" class="button-padrao button-under-data"
+                type="button">Download</button>
+        </div>
+        <div class="container">
+            <h6>6</h6>
+            <div id="six" class="data data-img">
+                <img class="casa" src="assets/house.jpg" alt="casa">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="texto-rodape">
+            <ul>
+                <li class="desktop">Termos</li>
+                <li class="desktop">Contato</li>
+                <li class="desktop margin-li">Sobre</li>
+                <li class="copyright">Copyright 2022.</li>
+                <li class="desktop">Todos os direitos reservados.</li>
+            </ul>
+            
+        </div>
+
+        <img src="assets/logo.jpg" alt="logo" style="float: right; height: 45px; margin-right: 20px;">
+    </footer>
+    <div class="janela-modal" id="janelaModal">
+        <div class="modal">
+            <div class="modal-top">
+                <button class="fechar" id="fechar">X</button>
+            </div>
+            <div class="img-modal-container">
+                <img alt="casa" class="img-modal" src="assets/house.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

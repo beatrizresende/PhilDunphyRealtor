@@ -1,0 +1,461 @@
+:root {
+    --primary-color:  #23685f;
+    --secondary-color: #2d636e;
+    --text: #787878;
+
+}
+
+html,body{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar, .rodape {
+    background-color: var(--primary-color); 
+    color: #FFFFFF;
+    height: 45px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.navbar {
+    top: 0;
+    z-index: 500;
+}
+
+.rodape {
+    bottom: 0;
+    margin-top: 40px;
+}
+
+.menu, .texto-rodape {
+    padding-top: 2px;
+    font-size: 13px;
+}
+
+.margin-li {
+    margin-right: 300px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/*button CADASTRE-SE*/
+.cadastro {
+    margin: 9px 50px 12px 20px;
+    border-style:solid;
+    border-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 6px 15px 18px 15px;
+    background-color: transparent;
+    color:#FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+/*GADGETS*/
+.container-total {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-content: center;
+    overflow: scroll;
+    padding: 35px 0px 55px 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+/*numeração gadgets*/
+h6 {
+    font-size: 15px;
+    margin: 10px 2px 0px 10px;
+}
+
+/*configuração do conteúdo (data) de cada gadget*/
+.data {
+    border: solid 1px rgba(120, 120, 120, .3);
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    width: 300px;
+    height: 220px;
+    margin: 10px 10px 10px 10px;
+}
+
+/*configuração dos gadgets de imagem*/
+.data-img {
+    padding: 0;
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+}
+
+.data-img img {
+    width: 100%;
+}
+/*configuração dos botões laranjas*/
+.button-padrao {
+    padding: 5px 5px 5px 5px;
+    font-size: 12px;
+    background-color: var(--secondary-color);
+    border-color: transparent;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/*configuração dos botões de gadgets de imagem*/ 
+.button-under-data {
+    position: absolute;
+    margin: 260px 33px 80px 31px;
+    width: max-content;
+    padding: 5px 0px 5px 0px;
+    width: 321px;
+}
+
+/*ONE*/
+.img-corretor-container {
+    width: 100px;
+    height: 100px;
+    border: solid 2px var(--text);
+    border-radius: 5px;
+    position: relative;
+}
+
+.fundo {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.img-corretor {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.corretor {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-corretor {
+    padding-top: 8%;
+    padding-left: 10px;
+    color: var(--primary-color);
+}
+
+.info-corretor h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.info-corretor p {
+    margin: 5px 0px 0px 0px;
+    font-size: 11px;
+}
+
+#verTelefone1, #verTelefone2 {
+    text-decoration: underline;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+/*TWO*/
+h2 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px 15px 0px 10px;
+    color: var(--primary-color);
+}
+#two form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#two form input, #two form textarea {
+    margin: 10px 10px 0px 10px;
+    padding: 7px 7px 7px 7px;
+    font-size: 12px;
+    color: var(--text);
+    opacity: 80%;
+    border: solid 1px var(--text);
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+#enviarMensagem {
+    margin-top: 10px;
+    width: max-content;
+    margin-left: 10px;
+}
+
+/*THREE*/
+hr {
+    width: 100%;
+    margin-top: 35px;
+    border: 0;
+    border-top: 1px solid black;
+  }
+
+#three form {
+    padding-top: 5%;
+}
+
+.top-form, .bottom-form {
+    display: flex;
+    flex-direction: row;
+}
+
+#three form input {
+    margin: 20px 10px 0px 10px;
+    padding: 3px 3px 3px 3px;
+    font-size: 18px;
+    color: var(--text);
+    opacity: 80%;
+    border: solid 1px var(--text);
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    width: 100px;
+}
+
+#calcular {
+    width: 35%;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+#resultado {
+    border: 2px solid var(--secondary-color) !important;
+    opacity: 100% !important;
+    background-color: transparent;
+}
+
+/*FOUR*/
+.casa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.janela-modal {
+    background-color: rgba(0, 0, 0, 0.57);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index:999;
+    align-self: center;
+}
+
+.abrir {
+    display:flex;
+    visibility: visible !important;
+}
+
+
+.modal {
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-top {
+    border-bottom: 2px solid rgba(120, 120, 120, .3);
+}
+
+.img-modal-container {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    align-self: center;
+    padding: 65px 20px 110px 20px;
+}
+
+.img-modal {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.fechar {
+    color: var(--secondary-color);
+    font-weight: 1000;
+    border: 0;
+    background: none;
+    font-size: 20px;
+    float: right;
+    padding: 7px 15px 7px 0px;
+    cursor: pointer;
+}
+
+
+/*FIVE*/
+#five p {
+    font-size: 12px;
+    padding: 5px 60px 5px 60px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 50px;
+    opacity: 90%;
+}
+
+/*SIX*/
+
+@keyframes zoomout{
+    from {
+        transform: scale(2);
+    } to {
+        transform: scale(1);
+    }
+}
+
+#six .casa {
+    animation: zoomout 5s;
+}
+
+/*MOBILE*/
+@media (max-width: 768px) {
+    .desktop, .cadastro {
+        visibility: hidden;
+    }
+    .texto-rodape ul {
+        position: absolute;
+        bottom: -30%;
+        left: 0;
+    }
+    .copyright {
+        display: flex;
+        margin: 0;
+        padding-top: 10px;
+        padding-right: 5px;
+    }
+    
+    .container {
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #five p {
+        margin-top: 170px;
+        margin-left: 30px;
+    }
+}
+.menu-icon {
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 7px;
+    right: 30px;
+    font-size: 24px;
+}
+.mobile {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    padding-right: 20px;
+    right:0;
+    top: 45px;
+    visibility: hidden;
+}
+.mobile li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 320px) {
+    .data {
+        width: 270px;
+        height: 220px;
+        margin-left: 4px;
+        margin-right: 3px;
+    }
+    .data-img {
+        width: 290px;
+        height: 240px;
+    }
+    h6 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .button-under-data {
+        margin: 270px 13px 80px 14px;
+        width: 290px;
+    }
+    .img-corretor-container {
+        width: 85px;
+        height: 85px;
+    }
+    .info-corretor {
+        padding-top: 6%;
+    }
+}
+
+/*DESKTOP*/
+
+@media (min-width: 769px) {
+    .mobile, .menu-icon {
+        visibility: hidden;
+    }
+    .copyright {
+        padding-left: 200px;
+    }
+    
+    /* .container {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    } */
+}
+
+@media (max-width: 1024px) {
+    .margin-li {
+        margin-right: 60px;
+    }
+}
